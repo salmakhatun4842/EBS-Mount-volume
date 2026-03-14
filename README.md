@@ -18,8 +18,7 @@ Identify your attached volume (e.g., /dev/xvdf)
 # Step 4: Create a Filesystem on the EBS Volume:
 Let’s first create a directory to be used as the mount point:
 **mkdir -p /mnt/ebs_volume**
- Now use the below command to create a filesystem on the attached volume:
-** mkfs -t ext4 /dev/xvdf**
+ Now use the below command to create a filesystem on the attached volume: ** mkfs -t ext4 /dev/xvdf**
 Now if we verify if the new file system exists use the below command and you should see the output:
 
 ** file -s /dev/xvdf**
